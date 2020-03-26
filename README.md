@@ -2,11 +2,10 @@
 > Back-end usando Node.js, Express e MongoDB
 
 ## Iniciar o servidor
-### Nodemon
-Para instalar o nodemon é só executar no PowerShell: ```npm install nodemon -D```
-> o -D irá instalar o nodemon nas devDependencies
+Antes de inciar o servidor será preciso executar na pasta com o Powershell:  ```npm install```
 
-Agora é só é executar: ```npm start```
+### Nodemon
+Para iniciar o servidor com o Nodemon é só é executar no PowerShell: ```npm start```
 
 ### Node
 Executar o comando: ```node src/index.js```
