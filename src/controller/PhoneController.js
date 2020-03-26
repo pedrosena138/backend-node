@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 const Phone = require('../models/Phone')
-const Validation = require('./utils/formValidation')
+const formValidation = require('./utils/formValidation')
 const dateFormat = require('./utils/dateFormat')
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
         startDate = dateFormat(startDate)
         endDate = dateFormat(endDate)
 
-        const validation = Validation(phone_model,price,brand,startDate,endDate,colors)
+        const validation = formValidation(phone_model,price,brand,startDate,endDate,colors)
         
         if (validation) {
             await Phone.create({
