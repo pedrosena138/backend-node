@@ -2,15 +2,20 @@
 > Back-end usando Node.js, Express e MongoDB
 
 ## Iniciar o servidor
-Antes de inciar o servidor será preciso executar na pasta com o Powershell:  ```npm install```
+Antes de inciar o servidor será preciso executar na pasta o comando:  ```npm install```
+> Irá instalar todas as dependências do projeto
+
+Para iniciar o servidor, é possível iniciar com o Nodemon ou com o Node
 
 ### Nodemon
-Para iniciar o servidor com o Nodemon é só é executar no PowerShell: ```npm start```
+> Framework de desenvolvimento do Node
+
+Executar o comando: ```npm start```
 
 ### Node
 Executar o comando: ```node src/index.js```
 
-### Descrição
+## Descrição
 Sistema de cadastro de celulares. Possui os atributos:
 - ```model```: Modelo do telefone;
 - ```price```: Preço do telefone;
@@ -20,7 +25,7 @@ Sistema de cadastro de celulares. Possui os atributos:
 - ```colors```: Cores disponíveis do telefone;
 - ```code```: Código do telefone.
 
-### Validações
+## Validações
 
 |   Atributos   | Validações                                                          |
 |---------------|---------------------------------------------------------------------|
