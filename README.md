@@ -12,7 +12,7 @@ Sistema de cadastro de celulares. Possui os atributos:
 - ```startDate```: Data de início das vendas do telefone;
 - ```endDate```: Data do fim das vendas do telefone;
 - ```colors```: Cores disponíveis do telefone;
-- ```code```: Código do telefone.]
+- ```code```: Código do telefone.
 
 ### Validações
 
