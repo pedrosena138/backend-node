@@ -10,9 +10,17 @@ mongoose.connect('mongodb+srv://admin:admin1234@cluster0-aaoey.mongodb.net/test?
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
+.then(() => {
+    console.log('Database Connected Successfully')
+})
+.catch(err => {
+    console.log('Unable to connect with the database', err)
+})
 
 app.use(express.json())
 app.use(routes)
 app.use(bodyParser.json())
 app.use(cors())
+
+const port = process.env.PORT || 3333
 app.listen(3333)
