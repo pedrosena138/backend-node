@@ -1,8 +1,15 @@
 # Back-end Node.js
 > Back-end usando Node.js, Express e MongoDB
 
-### Iniciar o servidor
-```npm start```
+## Iniciar o servidor
+### Nodemon
+Para instalar o nodemon é só executar no PowerShell: ```npm install nodemon -D```
+> o -D irá instalar o nodemon nas devDependencies
+
+Agora é só é executar: ```npm start```
+
+### Node
+Executar o comando: ```node src/index.js```
 
 ### Descrição
 Sistema de cadastro de celulares. Possui os atributos:
