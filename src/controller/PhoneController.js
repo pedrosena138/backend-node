@@ -7,7 +7,7 @@ module.exports = {
     async index(req, res) {
         await Phone.find()
         .then((phones) => {
-            return res.json(phones)
+            return res.status(200).json(phones)
         })
         .catch((err) => {
             console.log(err)
@@ -34,14 +34,14 @@ module.exports = {
                 colors,
                 code})
             .then(() => {
-                return res.send({message: `Phone ${code.toUpperCase()} registered`})
+                return res.status(200).send({message: `Phone ${code.toUpperCase()} registered`})
             })
             .catch(err => {
                 console.log(err)
                 return res.status(400).send(err)
             })
         } else {
-            return res.status(400).send({message:'Required field not match'})
+            return res.status(400).send({message:'Impossible to register - Required field not match'})
         }
     },
  
@@ -56,7 +56,7 @@ module.exports = {
             })
             .catch(err => {
                 console.log(err)
-                return res.status(404).send()
+                return res.status(400).send(err)
             })
         })
         .catch(err => {
@@ -91,7 +91,7 @@ module.exports = {
                 })
                 .catch(err => {
                     console.log(err)
-                    return res.status(404).send()
+                    return res.status(400).send(err)
                 })
             })
             .catch(err => {
@@ -99,7 +99,7 @@ module.exports = {
                 return res.status(404).send(err)
             })
         } else {
-            res.status(400).send({menssage: 'Impossible update table - field dont match'})
+            res.status(400).send({menssage: 'Impossible update table - field not match'})
         }
     }
 }
