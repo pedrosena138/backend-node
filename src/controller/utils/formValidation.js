@@ -1,5 +1,5 @@
-const checkColors = require('./checkColor')
-const formatString = require('./formatString')
+const checkColors = require('../../utils/checkColor')
+const formatString = require('../../utils/formatString')
 
 module.exports = function formValidation(model, price, brand, startDate, endDate, colors) {
     const colorValidation = (checkColors(colors))

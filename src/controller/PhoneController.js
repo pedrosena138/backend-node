@@ -1,7 +1,7 @@
 const crypto = require('crypto')
 const Phone = require('../models/Phone')
-const Validation = require('../utils/formValidation')
-const dateFormat = require('../utils/dateFormat')
+const Validation = require('./utils/formValidation')
+const dateFormat = require('./utils/dateFormat')
 
 module.exports = {
     async index(req, res) {
