@@ -1,19 +1,23 @@
 # Back-end Node.js
 > Back-end usando Node.js, Express e MongoDB
 
+## Instalar o Node.js
+- Para instalar o Node.js é só clicar nesse [link](https://nodejs.org/en/)
+
 ## Iniciar o servidor
-Antes de inciar o servidor será preciso executar na pasta o comando:  ```npm install```
-> Irá instalar todas as dependências do projeto
+- Antes de inciar o servidor será preciso executar na pasta o comando:  ```npm install```
+  > Irá instalar todas as dependências do projeto
 
 Para iniciar o servidor, é possível iniciar com o Nodemon ou com o Node
 
 ### Nodemon
 > Framework de desenvolvimento do Node
 
-Executar o comando: ```npm start```
+- Executar o comando: ```npm start```.
+- Caso queira instalar no seu projeto o Nodemon é só executar o comando: ```npm install nodemon```
 
 ### Node
-Executar o comando: ```node src/index.js```
+- Executar o comando: ```node src/index.js```
 
 ## Descrição
 Sistema de cadastro de celulares. Possui os atributos:
