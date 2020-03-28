@@ -1,5 +1,5 @@
 # Back-end Node.js
-> Back-end usando Node.js, Express e MongoDB
+> API REST usando Node.js, Express e MongoDB
 
 ## Instalar o Node.js
 - Para instalar o Node.js é só clicar nesse [link](https://nodejs.org/en/)
